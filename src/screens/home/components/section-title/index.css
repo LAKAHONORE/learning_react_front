@@ -1,0 +1,13 @@
+.spin{
+  animation: spin 3s ease-in-out infinite alternate;
+}
+
+
+@keyframes spin{
+  from {
+    transform: translateX(0px);
+  }
+  to{
+    transform: translateX(150px);
+  }
+}

@@ -1,0 +1,13 @@
+.hero-svg{
+  animation: heroSvg ease-in-out 4s infinite alternate;
+}
+
+
+@keyframes heroSvg {
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(-30px);
+  }
+}

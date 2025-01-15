@@ -1,20 +1,26 @@
 import { NavLink } from 'react-router-dom'
 import SearchBar from './components/searchbar/SearchBar'
-import { Cart4, Globe } from 'react-bootstrap-icons'
+import { Cart4, Globe, List, X } from 'react-bootstrap-icons'
 import DropdownHelp from './components/dropdownhelp/DropdownHelp'
+import { useState } from 'react'
 
 export default function Navbar() {
 
+  const [mobileNav, setMobileNav] = useState(false);
+
   return (
-    <nav className="flex flex-row justify-between items-center w-full h-16 top-0 bg-white px-24">
+    <nav className="flex flex-row justify-center md:justify-between items-center w-full h-16 top-0 sticky z-30 bg-white gap-2 px-2 md:px-24">
       <NavLink to={'/'} className="flex flex-row justify-center items-center gap-1">
         <img src="assets/img/logo-estuaire.png" className="w-10 h-10" alt="" />
-        <span className="logo-font">Estuaire Learning</span>
+        <span className="hidden md:flex logo-font">Estuaire Learning</span>
       </NavLink>
 
       <SearchBar />
 
-      <ul className="flex flex-row justify-center items-center gap-6">
+
+      <ul className="hidden md:flex flex-row justify-center items-center gap-6">
+
+
 
         <li>
           <NavLink to={''} className="flex flex-row items-center gap-1 text-black hover:text-blueColor hover:font-semibold transition-all">
@@ -46,6 +52,16 @@ export default function Navbar() {
 
       </ul>
 
+
+        <div className="flex md:hidden" onClick={()=>setMobileNav(mobileNav!)}>
+          {
+            mobileNav ? (
+              <X className="text-2xl"/>
+            ):(
+              <List className="text-2xl"/>
+            )
+          }
+        </div>
     </nav>
   )
 }
