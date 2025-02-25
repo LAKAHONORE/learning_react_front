@@ -9,13 +9,17 @@ export default function Navbar() {
   const [mobileNav, setMobileNav] = useState(false);
 
   return (
-    <nav className="flex flex-row justify-center md:justify-between items-center w-full h-16 top-0 sticky z-30 bg-white gap-2 px-2 md:px-24">
+    <nav className="flex flex-row justify-between items-center w-full h-16 top-0 sticky z-30 bg-white gap-2 px-2 md:px-24">
       <NavLink to={'/'} className="flex flex-row justify-center items-center gap-1">
         <img src="assets/img/logo-estuaire.png" className="w-10 h-10" alt="" />
-        <span className="hidden md:flex logo-font">Estuaire Learning</span>
+        <span className="flex logo-font">Estuaire Learning</span>
       </NavLink>
 
-      <SearchBar />
+
+        <div className='hidden md:flex'>
+          <SearchBar />
+        </div>
+
 
 
       <ul className="hidden md:flex flex-row justify-center items-center gap-6">

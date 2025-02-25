@@ -13,7 +13,7 @@ export default function Hero() {
             Formez-vous aux métiers les plus recherchés avec nos formations certifiantes.
           </p>
 
-          <div className="flex justify-center md:justify-start">
+          <div className="flex justify-center md:justify-start animate__animated animate__bounce delay-300">
             <Link to={''} className="bg-purpleColor py-3 px-2 rounded-sm text-white font-semibold hover:bg-blueColor transition">
               Commencer maintenant
             </Link>
@@ -25,7 +25,7 @@ export default function Hero() {
           <img src="assets/svg/hero.png" alt="" className="hero-svg" />
         </div>
       </section>
-      
+
     </>
 
 

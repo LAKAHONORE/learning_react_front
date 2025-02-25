@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ChevronDoubleDown, ChevronDoubleUp, Envelope, Phone, QuestionLg, Telephone } from 'react-bootstrap-icons';
+import { ChevronDoubleDown, ChevronDoubleUp, Envelope, QuestionLg, Telephone } from 'react-bootstrap-icons';
 import { NavLink } from 'react-router-dom';
 
 export default function DropdownHelp() {

@@ -2,6 +2,10 @@
   animation: heroSvg ease-in-out 4s infinite alternate;
 }
 
+.img-hover:hover{
+  animation: imgBorderHover ease-in-out .5s forwards alternate;
+}
+
 
 @keyframes heroSvg {
   from{
@@ -9,5 +13,27 @@
   }
   to{
     transform: translateY(-30px);
+  }
+}
+
+
+@keyframes imgBorderHover{
+  0%{
+    border-top: 3px solid #4b21c3;
+  }
+  25%{
+    border-top: 3px solid #4b21c3;
+    border-left: 3px solid #4b21c3;
+  }
+  50%{
+    border-top: 3px solid #4b21c3;
+    border-left: 3px solid #4b21c3;
+    border-right: 3px solid #4b21c3;
+  }
+  100%{
+    border-top: 3px solid #4b21c3;
+    border-left: 3px solid #4b21c3;
+    border-right: 3px solid #4b21c3;
+    border-bottom: 3px solid #4b21c3;
   }
 }

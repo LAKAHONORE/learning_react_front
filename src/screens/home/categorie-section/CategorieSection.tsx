@@ -1,6 +1,7 @@
 import { ChevronLeft, ChevronRight } from 'react-bootstrap-icons'
 import { Link } from 'react-router-dom'
 import SectionTitle from '../components/section-title/SectionTitle'
+import '../index.css'
 
 export default function CategorieSection() {
 
@@ -42,7 +43,7 @@ export default function CategorieSection() {
     <>
       <SectionTitle title={`Nos catégories récentes`} />
 
-      <section className="flex flex-col my-16 w-full gap-4 bg-white md:px-6">
+      <section className="flex flex-col w-full gap-4 bg-white md:px-6">
 
 
         <div className="flex flex-row justify-end items-center gap-3 mx-6 ">
@@ -60,49 +61,63 @@ export default function CategorieSection() {
 
         <div id="slider" className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide animate__animated animate__backInUp'>
 
-          <div className='inline-flex items-center w-[300px] h-[250px] mx-6 hover:scale-105 duration-300'>
+          <div className='inline-flex items-center w-[300px] h-[250px] mx-6 hover:scale-105 duration-300 '>
             <Link to={''}>
-              <img src="assets/img/categorie.jpeg" className='object-cover' alt="" />
+              <img src="assets/img/categorie.jpeg" className='img-hover object-cover rounded-md' alt="" />
+            </Link>
+
+          </div>
+
+          <div className='inline-flex items-center w-[300px] h-[250px] mx-6 hover:scale-105 duration-300 '>
+            <Link to={''}>
+              <img src="assets/img/categorie.jpeg" className='img-hover object-cover rounded-md' alt="" />
+            </Link>
+
+          </div>
+
+          <div className='inline-flex items-center w-[300px] h-[250px] mx-6 hover:scale-105 duration-300 '>
+            <Link to={''}>
+              <img src="assets/img/categorie.jpeg" className='img-hover object-cover rounded-md' alt="" />
+            </Link>
+
+          </div>
+
+          <div className='inline-flex items-center w-[300px] h-[250px] mx-6 hover:scale-105 duration-300 '>
+            <Link to={''}>
+              <img src="assets/img/categorie.jpeg" className='img-hover object-cover rounded-md' alt="" />
+            </Link>
+
+          </div>
+
+          <div className='inline-flex items-center w-[300px] h-[250px] mx-6 hover:scale-105 duration-300 '>
+            <Link to={''}>
+              <img src="assets/img/categorie.jpeg" className='img-hover object-cover rounded-md' alt="" />
+            </Link>
+
+          </div>
+
+          <div className='inline-flex items-center w-[300px] h-[250px] mx-6 hover:scale-105 duration-300 '>
+            <Link to={''}>
+              <img src="assets/img/categorie.jpeg" className='img-hover object-cover rounded-md' alt="" />
+            </Link>
+
+          </div>
+
+          <div className='inline-flex items-center w-[300px] h-[250px] mx-6 hover:scale-105 duration-300 '>
+            <Link to={''}>
+              <img src="assets/img/categorie.jpeg" className='img-hover object-cover rounded-md' alt="" />
+            </Link>
+
+          </div>
+
+          <div className='inline-flex items-center w-[300px] h-[250px] mx-6 hover:scale-105 duration-300 '>
+            <Link to={''}>
+              <img src="assets/img/categorie.jpeg" className='img-hover object-cover rounded-md' alt="" />
             </Link>
 
           </div>
 
 
-          <div className='inline-flex items-center text-center w-[300px] h-[250px] mx-6'>
-            <Link to={''}>
-              <img src="assets/img/categorie.jpeg" className='object-cover' alt="" />
-            </Link>
-          </div>
-          <div className='inline-flex items-center text-center w-[300px] h-[250px] mx-6'>
-            <Link to={''}>
-              <img src="assets/img/categorie.jpeg" className='object-cover' alt="" />
-            </Link>
-          </div>
-          <div className='inline-flex items-center text-center w-[300px] h-[250px] mx-6'>
-            <Link to={''}>
-              <img src="assets/img/categorie.jpeg" className='object-cover' alt="" />
-            </Link>
-          </div>
-          <div className='inline-flex items-center text-center w-[300px] h-[250px] mx-6'>
-            <Link to={''}>
-              <img src="assets/img/categorie.jpeg" className='object-cover' alt="" />
-            </Link>
-          </div>
-          <div className='inline-flex items-center text-center w-[300px] h-[250px] mx-6'>
-            <Link to={''}>
-              <img src="assets/img/categorie.jpeg" className='object-cover' alt="" />
-            </Link>
-          </div>
-          <div className='inline-flex items-center text-center w-[300px] h-[250px] mx-6'>
-            <Link to={''}>
-              <img src="assets/img/categorie.jpeg" className='object-cover' alt="" />
-            </Link>
-          </div>
-          <div className='inline-flex items-center text-center w-[300px] h-[250px] mx-6'>
-            <Link to={''}>
-              <img src="assets/img/categorie.jpeg" className='object-cover' alt="" />
-            </Link>
-          </div>
 
         </div>
 
@@ -112,7 +127,7 @@ export default function CategorieSection() {
       <section className="flex flex-col my-16 w-full gap-4 bg-white md:px-6">
 
 
-        <div className="flex flex-row justify-end items-center gap-3 mx-6 ">
+        <div className="flex flex-row justify-start md:justify-end items-center gap-3 mx-6 ">
           <Link to={''} className='text-purpleColor font-semibold hover:scale-105 duration-400 transition'>
             Tout voir
           </Link>
@@ -127,49 +142,63 @@ export default function CategorieSection() {
 
         <div id="slider-2" className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide animate__animated animate__backInUp'>
 
-          <div className='inline-flex items-center w-[300px] h-[250px] mx-6 hover:scale-105 duration-300'>
+          <div className='inline-flex items-center w-[300px] h-[250px] mx-6 hover:scale-105 duration-300 '>
             <Link to={''}>
-              <img src="assets/img/categorie.jpeg" className='object-cover' alt="" />
+              <img src="assets/img/technology.jpeg" className='img-hover object-cover rounded-md' alt="" />
+            </Link>
+
+          </div>
+
+          <div className='inline-flex items-center w-[300px] h-[250px] mx-6 hover:scale-105 duration-300 '>
+            <Link to={''}>
+              <img src="assets/img/technology.jpeg" className='img-hover object-cover rounded-md' alt="" />
+            </Link>
+
+          </div>
+
+          <div className='inline-flex items-center w-[300px] h-[250px] mx-6 hover:scale-105 duration-300 '>
+            <Link to={''}>
+              <img src="assets/img/technology.jpeg" className='img-hover object-cover rounded-md' alt="" />
+            </Link>
+
+          </div>
+
+          <div className='inline-flex items-center w-[300px] h-[250px] mx-6 hover:scale-105 duration-300 '>
+            <Link to={''}>
+              <img src="assets/img/technology.jpeg" className='img-hover object-cover rounded-md' alt="" />
+            </Link>
+
+          </div>
+
+          <div className='inline-flex items-center w-[300px] h-[250px] mx-6 hover:scale-105 duration-300 '>
+            <Link to={''}>
+              <img src="assets/img/technology.jpeg" className='img-hover object-cover rounded-md' alt="" />
+            </Link>
+
+          </div>
+
+          <div className='inline-flex items-center w-[300px] h-[250px] mx-6 hover:scale-105 duration-300 '>
+            <Link to={''}>
+              <img src="assets/img/technology.jpeg" className='img-hover object-cover rounded-md' alt="" />
+            </Link>
+
+          </div>
+
+          <div className='inline-flex items-center w-[300px] h-[250px] mx-6 hover:scale-105 duration-300 '>
+            <Link to={''}>
+              <img src="assets/img/technology.jpeg" className='img-hover object-cover rounded-md' alt="" />
+            </Link>
+
+          </div>
+
+          <div className='inline-flex items-center w-[300px] h-[250px] mx-6 hover:scale-105 duration-300 '>
+            <Link to={''}>
+              <img src="assets/img/technology.jpeg" className='img-hover object-cover rounded-md' alt="" />
             </Link>
 
           </div>
 
 
-          <div className='inline-flex items-center text-center w-[300px] h-[250px] mx-6'>
-            <Link to={''}>
-              <img src="assets/img/categorie.jpeg" className='object-cover' alt="" />
-            </Link>
-          </div>
-          <div className='inline-flex items-center text-center w-[300px] h-[250px] mx-6'>
-            <Link to={''}>
-              <img src="assets/img/categorie.jpeg" className='object-cover' alt="" />
-            </Link>
-          </div>
-          <div className='inline-flex items-center text-center w-[300px] h-[250px] mx-6'>
-            <Link to={''}>
-              <img src="assets/img/categorie.jpeg" className='object-cover' alt="" />
-            </Link>
-          </div>
-          <div className='inline-flex items-center text-center w-[300px] h-[250px] mx-6'>
-            <Link to={''}>
-              <img src="assets/img/categorie.jpeg" className='object-cover' alt="" />
-            </Link>
-          </div>
-          <div className='inline-flex items-center text-center w-[300px] h-[250px] mx-6'>
-            <Link to={''}>
-              <img src="assets/img/categorie.jpeg" className='object-cover' alt="" />
-            </Link>
-          </div>
-          <div className='inline-flex items-center text-center w-[300px] h-[250px] mx-6'>
-            <Link to={''}>
-              <img src="assets/img/categorie.jpeg" className='object-cover' alt="" />
-            </Link>
-          </div>
-          <div className='inline-flex items-center text-center w-[300px] h-[250px] mx-6'>
-            <Link to={''}>
-              <img src="assets/img/categorie.jpeg" className='object-cover' alt="" />
-            </Link>
-          </div>
 
         </div>
 
